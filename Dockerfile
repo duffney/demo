@@ -23,7 +23,8 @@ RUN cargo build --release
 ###############
 ## run stage ##
 ###############
-FROM debian:bullseye-20211220
+FROM ghcr.io/duffney/debian:bullseye-20211220
+# FROM debian:bullseye-20211220
 # FROM debian:bullseye-20230411
 WORKDIR /app
 
