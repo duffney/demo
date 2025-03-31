@@ -1,18 +1,10 @@
 ---
 version: 2
 updates:
+  # Enable version updates for Docker
   - package-ecosystem: "docker"
+    # Look for a `Dockerfile` in the `root` directory
     directory: "/"
+    # Check for updates once a day
     schedule:
       interval: "daily"
-    labels:
-      - "dependencies"
-      - "docker"
-    commit-message:
-      prefix: "deps"
-      include: "scope"
-    open-pull-requests-limit: 5
-    groups:
-      docker:
-        patterns:
-          - "ghcr.io/duffney/*"
