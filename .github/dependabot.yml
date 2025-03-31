@@ -1,15 +1,18 @@
 ---
 version: 2
 updates:
-  - package-ecosystem: "github-actions"
+  - package-ecosystem: "docker"
     directory: "/"
     schedule:
-      interval: "weekly"
-  - package-ecosystem: npm
-    directory: "/javascript"
-    schedule:
-      interval: "weekly"
-  - package-ecosystem: bundler
-    directory: "/ruby"
-    schedule:
-      interval: "weekly"
+      interval: "daily"
+    labels:
+      - "dependencies"
+      - "docker"
+    commit-message:
+      prefix: "deps"
+      include: "scope"
+    open-pull-requests-limit: 5
+    groups:
+      docker:
+        patterns:
+          - "ghcr.io/duffney/debian:.*"
