@@ -15,4 +15,4 @@ updates:
     groups:
       docker:
         patterns:
-          - "ghcr.io/duffney/debian:.*"
+          - "ghcr.io/duffney/*"
