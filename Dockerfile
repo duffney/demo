@@ -23,7 +23,7 @@ RUN cargo build --release
 ###############
 ## run stage ##
 ###############
-FROM debian:bullseye-20211220
+FROM debian:bullseye-20250317
 # FROM debian:bullseye-20230411
 WORKDIR /app
 
