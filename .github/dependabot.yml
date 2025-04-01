@@ -10,7 +10,7 @@ updates:
 registries:
   ghcr:
     type: "docker-registry"
-    url: "https://ghcr.io/duffney"
+    url: "https://ghcr.io"
     username: "${{ github.actor }}"
     password: "${{ secrets.GITHUB_TOKEN }}"
     replaces-base: true
