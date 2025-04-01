@@ -5,3 +5,10 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
+registries:
+  ghcr:
+    type: "docker-registry"
+    url: "https://ghcr.io/duffney"
+    username: "${{ github.actor }}"
+    password: "${{ secrets.GITHUB_TOKEN }}"
+    replaces-base: true
