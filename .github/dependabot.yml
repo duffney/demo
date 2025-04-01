@@ -12,5 +12,5 @@ registries:
     type: "docker-registry"
     url: "https://ghcr.io"
     username: "${{ github.actor }}"
-    password: "${{ secrets.GITHUB_TOKEN }}"
+    password: "${{ secrets.TOKEN }}"
     replaces-base: true
