@@ -1,7 +1,7 @@
 #################
 ## build stage ##
 #################
-FROM ghcr.io/duffney/rust:1.79.0 AS builder
+FROM ghcr.io/duffney/rust:1.79.0-1 AS builder
 WORKDIR /code
 
 # Download crates-io index and fetch dependency code.
