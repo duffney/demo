@@ -1,7 +1,7 @@
 #################
 ## build stage ##
 #################
-FROM rust:1.68.1-bullseye AS builder
+FROM ghcr.io/duffney/rust:1.68.1-bullseye AS builder
 WORKDIR /code
 
 # Download crates-io index and fetch dependency code.
