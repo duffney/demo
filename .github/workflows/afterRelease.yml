@@ -1,0 +1,12 @@
+name: after release
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  after-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo
+        run: echo "after release"
